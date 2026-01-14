@@ -3,7 +3,8 @@ import string
 import secrets
 import os   
 
-app = Flask(__name__)
+#app = Flask(__name__)
+app = Flask(__name__, static_url_path='', static_folder='static')
 
 
 def generar_contrasena(longitud=12, usar_mayus=True, usar_minus=True, usar_numeros=True, usar_simbolos=True):
